@@ -5,7 +5,8 @@
 To Study and Implement DML Commands.
 
 # THEORY:
-## 1. INSERT INTO: This is used to add records into a relation. 
+## 1. INSERT INTO: 
+This is used to add records into a relation. 
 These are three type of INSERT INTO queries which are as 
 
 ### a) Inserting a single record 
@@ -32,7 +33,8 @@ This is used to delete all the records of a relation but it will retain the stru
 This is used to delete all the records of relation. 
 #### Syntax:
 DELETE FROM relation_name;
-### b) DELETE -FROM-WHERE: This is used to delete a selected record from a relation. 
+### b) DELETE -FROM-WHERE: 
+This is used to delete a selected record from a relation. 
 #### Syntax:
 DELETE FROM relation_name WHERE condition; 
 
