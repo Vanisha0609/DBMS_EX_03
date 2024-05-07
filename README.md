@@ -45,17 +45,19 @@ SELECT (column1,column2) FROM (Table Name)WHERE condition;
 # MODULE:
 ## QUESTION 1:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/21c7c7f8-2099-4c8e-9aa9-a54ab63530dc)
+![Screenshot (167)](https://github.com/Subalakshmisuresh/DBMS_EX_03/assets/121957896/2eb03722-d03c-4115-80da-927957e3868f)
+
 
 ### QUERY:
 ```
-SELECT customer_id, cust_name, city, grade,salesman_id 
-FROM customer
-WHERE city='New York' OR grade<=100;
+SELECT *
+FROM orders
+WHERE (ord_date != '2012-08-17' and customer_id <= 3005 or purch_amt >= 1000);
 ```
 ### OUTPUT:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/04a60623-5e71-4e4b-b41d-aab121e692fc)
+![Screenshot (168)](https://github.com/Subalakshmisuresh/DBMS_EX_03/assets/121957896/2f455487-635a-4915-b895-5d2ad443f06f)
+
 
 ## QUESTION 2:
 
