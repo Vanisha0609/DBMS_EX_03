@@ -50,74 +50,67 @@ SELECT (column1,column2) FROM (Table Name)WHERE condition;
 
 ### QUERY:
 ```
-SELECT *
-FROM orders
-WHERE (ord_date != '2012-08-17' and customer_id <= 3005 or purch_amt >= 1000);
+SELECT salesman_id, name, city, commission
+FROM salesman
+WHERE city NOT IN ('Paris', 'Rome');
 ```
 ### OUTPUT:
 
-![Screenshot (168)](https://github.com/Subalakshmisuresh/DBMS_EX_03/assets/121957896/2f455487-635a-4915-b895-5d2ad443f06f)
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/6601fe35-9615-4212-9abd-9e2f9609881c)
 
 
 ## QUESTION 2:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/e9275a51-dcd2-488a-a086-6af1c252beb2)
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/fa481c75-4454-4d72-9201-c2ff2bc23511)
 
 ### QUERY:
 ```
-SELECT *
+SELECT customer_id, cust_name, city, grade, salesman_id
 FROM customer
-WHERE city='New York' OR grade>200;
+WHERE city = 'New York' OR grade <= 100;
 ```
 ### OUTPUT:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/19aeb983-2320-44bb-a9fe-91e92296d333)
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/5563649b-c5fc-421d-a1af-91f288e1c670)
 
 ## QUESTION 3:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/a5f6488d-0825-419c-89c6-2ee280981479)
 
 ### QUERY:
 ```
-SELECT *
-FROM orders
-WHERE purch_amt BETWEEN 500 AND 4000 
-AND purch_amt NOT IN (948.50,1983.43);
+SELECT customer_id, cust_name, city, grade, salesman_id
+FROM customer
+WHERE city = 'New York' OR grade > 200;
 ```
 
 ### OUTPUT:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/dc8b4a6d-a4dd-4ac5-b4c9-90dad7e94df0)
 
 ## QUESTION 4:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/a48d3539-a128-4e9a-b60d-0e02c8b7c0df)
+<img src="https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/4df48049-3ff5-4c24-bbe0-28c0bb770aca" width="800" height="400">
+
 
 ### QUERY:
 ```
-SELECT *
-FROM orders
-WHERE purch_amt <200 
-OR NOT (  ord_date >= '2012-02-10' AND  customer_id<3009);
+SELECT categoryName, description
+FROM categories
+ORDER BY categoryName;
 ```
 ### OUTPUT:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/2966daac-6048-4a96-8aa6-0f8e561eb944)
 
 ## QUESTION 5:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/23ffc44b-a098-4cd2-95c3-9e5f31bba201)
 
 ### QUERY:
 ```
 UPDATE products
-SET product_name = 'Premium Bread'
-WHERE product_id = 5;
-
+SET reorder_lvl = 20
+WHERE quantity < 10
+AND category = 'Snacks';
 ```
 ### OUTPUT:
-
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/8d119f3f-06bb-4c3d-adff-dcbe2ac4660a)
 
 ## QUESTION 6:
 
