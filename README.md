@@ -45,7 +45,7 @@ SELECT (column1,column2) FROM (Table Name)WHERE condition;
 # MODULE:
 ## QUESTION 1:
 
-<img src="https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/e19bd021-e761-43c2-a559-81538fcdd19f" width="800" height="300">
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/e19bd021-e761-43c2-a559-81538fcdd19f)
 
 
 ### QUERY:
