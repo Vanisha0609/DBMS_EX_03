@@ -74,6 +74,7 @@ WHERE city = 'New York' OR grade <= 100;
 ![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/5563649b-c5fc-421d-a1af-91f288e1c670)
 
 ## QUESTION 3:
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/d58b73e6-291e-4a3e-96ac-aaa246285db6)
 
 
 ### QUERY:
@@ -84,6 +85,7 @@ WHERE city = 'New York' OR grade > 200;
 ```
 
 ### OUTPUT:
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/62fe620a-99ce-4613-ba4f-6175845c515d)
 
 
 ## QUESTION 4:
@@ -98,9 +100,11 @@ FROM categories
 ORDER BY categoryName;
 ```
 ### OUTPUT:
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/4eab895a-291d-479e-a5a1-460364190132)
 
 
 ## QUESTION 5:
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/ebab2f1c-fee1-4da1-bf7b-229d9fe1b6a8)
 
 
 ### QUERY:
@@ -111,82 +115,78 @@ WHERE quantity < 10
 AND category = 'Snacks';
 ```
 ### OUTPUT:
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/7d149295-17bd-4b5e-8d6e-dbe46de01278)
 
 ## QUESTION 6:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/80bb5433-00ee-4bec-9a1f-be11b3f93733)
-
-### QUERY:
-```
-UPDATE employees
-SET salary = CASE
-    WHEN department_id = 40 THEN ROUND(salary * 1.25)
-    WHEN department_id = 90 THEN ROUND(salary * 1.15)
-    WHEN department_id = 110 THEN ROUND(salary * 1.10)
-    ELSE salary
-END
-WHERE department_id IN (40, 90, 110);
-
-```
-### OUTPUT:
-
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/8b16c54a-cb53-4708-89a4-605c83b7520d)
-
-## QUESTION 7:
-
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/934cd61f-61c6-41fa-924b-1b8d006c58e9)
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/a49afbde-4e48-456f-a550-af3fac122360)
 
 ### QUERY:
 ```
 UPDATE products
-SET quantity = quantity * 1.10;
+SET sell_price=sell_price*1.10
+WHERE category='Bakery';
+```
+### OUTPUT:
 
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/2a38d0c9-6d9d-4ecc-b28a-df3651b547e0)
+
+## QUESTION 7:
+
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/289eac3c-33e8-41fe-b9ca-696a45471903)
+
+### QUERY:
+```
+UPDATE employees
+SET first_name = 'John'
+WHERE department_id = 80
+AND commission_pct < 0.35;
 ```
 
 ### OUTPUT:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/8def8c67-5db9-457d-bfed-f6011dd3d6d1)
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/b322b0f1-ca55-42c6-b441-34e293ddac0b)
 
 ## QUESTION 8:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/fa2e2777-76a6-4dc7-a76a-08f1f53a9656)
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/2419587d-c66c-48ad-9e4d-f6fb8c8b9256)
 
 ### QUERY:
 ```
-DELETE FROM customer
-WHERE cust_city LIKE 'L%';
-
+DELETE FROM customer 
+WHERE GRADE=2;
 ```
 
 ### OUTPUT:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/0d1b8e78-c395-4537-a2b1-47dcef3605c9)
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/f8af8b1f-9559-48eb-b4ca-fcee891f6c78)
 
 ## QUESTION 9:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/2762ce7b-92b3-4fac-ac87-4433a674eb25)
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/8670680f-7bb0-4516-be18-9a916901dde0)
 
 ### QUERY:
 ```
 DELETE FROM customer
-WHERE OPENING_AMT BETWEEN 4000 AND 6000;
+WHERE CUST_CITY  NOT IN ( 'New York')
+AND OUTSTANDING_AMT >5000;
 ```
 ### OUTPUT:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/26871b8d-1a8f-4fc3-b4be-aff63da42bca)
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/3b95d3bb-f560-458b-b539-95c9851fe9d3)
 
 ## QUESTION 10:
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/11a218c6-c829-4a65-b6a3-c57416aacb4d)
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/c583ec09-e93a-46df-968f-3f7b0450c38f)
 
 ### QUERY:
 ```
 DELETE FROM doctors
-WHERE Specialization IS NULL;
+WHERE specialization IS NULL;
 ```
 ### OUTPUT:
 
-![image](https://github.com/Mena-Rossini/DBMS_EX_03/assets/102855266/24173d96-c238-4def-a1c5-0c0bb1d16528)
+![image](https://github.com/Vanisha0609/DBMS_EX_03/assets/119104009/68ed3a47-b94b-4c37-9541-00e3a518c1e5)
 
 # RESULT:
 Thus,we studied and implemented some DML Commands.
